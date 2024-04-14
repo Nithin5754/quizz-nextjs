@@ -64,9 +64,9 @@ const QuizzAddForm:React.FC<QuestionsProps> = ({ allQuestions,setAllQuestions })
 
 
   return (
-<>
+<div className="min-h-screen flex flex-col  items-center ">
    { allQuestions&&<Questions allQuestions={allQuestions} setAllQuestions={setAllQuestions}/>}
-
+   <h1 className="mb-4 text-center text-4xl font-bold italic underline">ENTER NEW QUESTIONS ?    </h1>
 <form className="w-[500px] dark:text-gray-200 dark:font-bold dark:bg-slate-500 p-4 rounded-md" onSubmit={handleSubmit}>
 
 <div className="flex flex-col gap-3">
@@ -110,7 +110,7 @@ option1&&option2&&option3&&option4&&(
 <Button onClick={handleLogout}>Log-out</Button>
    
 </form>
-</>
+</div>
   )
 }
 export default QuizzAddForm

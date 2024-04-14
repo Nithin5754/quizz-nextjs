@@ -49,7 +49,7 @@ const Master = () => {
     <Login setLoggedIn={setLoggedIn} setShowLoginModal={setShowLoginModal}/>
   ):(
   <>
-    <h1 className="mb-4 text-center text-4xl font-bold italic underline">ENTER NEW QUESTIONS ?    </h1>
+  
     <QuizzAddForm allQuestions={allQuestions} setAllQuestions={setAllQuestions}/>
   </>
   )
