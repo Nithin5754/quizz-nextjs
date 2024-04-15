@@ -11,12 +11,12 @@ import Modal from 'react-modal';
 interface PopupProps {
   closePopup: () => void;
 }
-
+const message = "Congratulations! That's the correct answer!";
 
 const Popup: React.FC<PopupProps> = ({ closePopup }) => (
   <div className="popup">
     <div className="popup-inner">
-      <p>Congratulations! That's the correct answer!</p>
+    <p>{message}</p>
       <button onClick={closePopup}>Close</button>
     </div>
   </div>
